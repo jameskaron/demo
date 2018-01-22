@@ -16,10 +16,16 @@ class DemoApplicationTests {
 	}
 
 	@Test
-	fun test(){
+	fun test1(){
         val unsortedList = listOf(3, 2, 7, 5)
         assertEquals(listOf(3, 7, 2, 5), unsortedList.sortedBy { it % 3 })
         println(2%3)
         println(unsortedList.sortedBy { it % 3 })
+	}
+
+	@Test fun test(){
+		val list = listOf(1,2,3)
+		val ele = list.first()
+		println(ele)
 	}
 }
